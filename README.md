@@ -65,7 +65,8 @@ This system was built with a "Zero Trust" architecture regarding user input:
 ## 👨‍💻 Author
 
 **Hamza Badshah**
-*Software Engineering Undergraduate | PAF-IAST Haripur*
+
+*Software Engineer | Pak-Austria Fachhochschule Institute of Applied Sciences and Technology *
 
 ---
 
