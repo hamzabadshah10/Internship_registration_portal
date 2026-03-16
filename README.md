@@ -66,7 +66,7 @@ This system was built with a "Zero Trust" architecture regarding user input:
 
 **Hamza Badshah**
 
-*Software Engineer | Pak-Austria Fachhochschule Institute of Applied Sciences and Technology *
+**Software Engineer | Pak-Austria Fachhochschule Institute of Applied Sciences and Technology**
 
 ---
 
