@@ -1,9 +1,13 @@
-<img width="959" height="510" alt="SUBMITTED" src="https://github.com/user-attachments/assets/5b435f01-7b55-4a72-a86e-9b7911c85744" /># 🎓 PAF-IAST Secure Internship Registration Portal
+🎓 PAF-IAST Secure Internship Registration Portal
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![PHP](https://img.shields.io/badge/PHP-8.0+-777BB4.svg?logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1.svg?logo=mysql&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-Multi--Layered-success.svg)
+
+
+<img width="959" height="512" alt="FORM" src="https://github.com/user-attachments/assets/40fa497e-e147-4b5f-a746-0523a106deda" />
+<img width="959" height="510" alt="SUBMITTED" src="https://github.com/user-attachments/assets/bdef52c8-1f19-4616-8f72-04d0d9aeb258" />
 
 
 A robust, highly secure, and visually modern web portal designed for software engineering students at Pak-Austria Fachhochschule (IAST) to register for industry internship placements. 
