@@ -57,8 +57,7 @@ This project emphasizes strict data integrity, multi-level form validation, and 
 4. **Launch the Application:**
    Open your web browser and navigate to: `http://localhost/Secure_Internship_Portal/index.html`
 
-## 🛡️ Security Architecture (Assignment Part D)
-
+## 🛡️ Security Architecture 
 This system was built with a "Zero Trust" architecture regarding user input:
 * **What happens if JavaScript is disabled?** The system remains secure. Client-side JS is purely for UX. The `register.php` file independently re-validates all regex patterns, file sizes, and data types before interacting with the database.
 * **Password Storage:** Plain-text passwords are never stored. They are hashed using the strong `BCRYPT` algorithm via PHP's `password_hash()`.
@@ -69,4 +68,5 @@ This system was built with a "Zero Trust" architecture regarding user input:
 *Software Engineering Undergraduate | PAF-IAST Haripur*
 
 ---
+
 *Developed for Web Engineering coursework. Built for security, designed for usability.*
