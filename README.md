@@ -5,8 +5,6 @@
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1.svg?logo=mysql&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-Multi--Layered-success.svg)
 
-<img width="959" height="510" alt="SUBMITTED" src="https://github.com/user-attachments/assets/115f062f-61cf-46d1-94e3-72aeae8137dd" />
-
 
 A robust, highly secure, and visually modern web portal designed for software engineering students at Pak-Austria Fachhochschule (IAST) to register for industry internship placements. 
 
