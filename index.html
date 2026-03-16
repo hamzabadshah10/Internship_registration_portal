@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | PAF-IAST Portal</title>
+    <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+
+    <nav class="portal-nav">
+        <div class="brand">
+            <span class="logo-icon">🎓</span> PAF-IAST INTERNSHIP PORTAL
+        </div> 
+        <div class="nav-links">
+            <a href="#" class="nav-btn">Home</a>
+            <a href="#" class="nav-btn">Dashboard</a>
+            <a href="#" class="nav-btn active">Register</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="registration-card">
+            
+            <div class="card-header">
+                <h2>Students Registration Form</h2>
+                <p>Submit your academic details for placement opportunities.</p>
+            </div>
+            
+            <form id="registrationForm" action="register.php" method="POST" enctype="multipart/form-data" novalidate class="portal-form">
+                
+                <h3 class="section-title">Identity Details</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="student_id">Student ID <span class="label-hint">(e.g., FA21-BCS-001)</span></label>
+                        <input type="text" id="student_id" name="student_id" class="form-control" placeholder="Enter your ID" required>
+                        <span class="error-msg" id="student_id_error">Invalid ID format.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="full_name">Full Name <span class="label-hint">(Enter your full name)</span></label>
+                        <input type="text" id="full_name" name="full_name" class="form-control" placeholder="Enter your full name" required>
+                        <span class="error-msg" id="full_name_error">Name is required.</span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cnic">CNIC Number <span class="label-hint">(12345-1234567-1)</span></label>
+                        <input type="text" id="cnic" name="cnic" class="form-control" placeholder="Enter your CNIC" required>
+                        <span class="error-msg" id="cnic_error">Invalid CNIC format.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="label-hint">(03XXXXXXXXX)</span></label>
+                        <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                        <span class="error-msg" id="phone_error">Invalid phone format.</span>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Account Security</h3>
+                <div class="form-group">
+                    <label for="email">University Email <span class="label-hint">(student@paf-iast.edu.pk)</span></label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your university email" required>
+                    <span class="error-msg" id="email_error">Valid email required.</span>
+                    <div id="email_status"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password <span class="label-hint">(Min 8 chars, upper/lower case, numeric value)</span></label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                        <span class="error-msg" id="password_error">Min 8 chars, 1 upper, 1 lower, 1 num, 1 special.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Confirm Password <span class="label-hint">(Repeat password)</span></label>
+                        <input type="password" id="confirm_password" class="form-control" placeholder="Confirm your password" required>
+                        <span class="error-msg" id="confirm_error">Passwords do not match.</span>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Academic Profile</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="department">Department <span class="label-hint">(Select from list)</span></label>
+                        <select id="department" name="department" class="form-control" required>
+                            <option value="" disabled selected>Select your department...</option>
+                            <option value="Software Engineering">Software Engineering</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Information Security">Information Security</option>
+                        </select>
+                        <span class="error-msg" id="dept_error">Please select a department.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cgpa">Current CGPA <span class="label-hint">(0.00 - 4.00)</span></label>
+                        <input type="number" step="0.01" id="cgpa" name="cgpa" class="form-control" placeholder="Enter your CGPA" required>
+                        <span class="error-msg" id="cgpa_error">Must be between 0.00 and 4.00.</span>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Supporting Documents</h3>
+                <div class="form-group file-upload-wrapper">
+                    <label for="resume" style="font-size: 1.1rem; color: var(--primary-color);">📄 Upload Resume / CV</label>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 10px;">Must be a PDF file, maximum size 2MB.</p>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required class="file-input">
+                    <span class="error-msg" id="resume_error" style="text-align: left;">Must be a valid PDF under 2MB.</span>
+                </div>
+
+                <button type="submit" id="submitBtn" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="portal-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Portal</h4>
+                <p>The PAF-IAST Internship Portal connects forward-thinking students with top-tier industry placements. Built for security, designed for usability.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">University Home</a>
+                <a href="#">Student Guidelines</a>
+                <a href="#">Career Counseling</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Support</h4>
+                <p>📧 placements@paf-iast.edu.pk</p>
+                <p>📞 +92 995 645113</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pak-Austria Fachhochschule: Institute of Applied Sciences and Technology. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/validation.js"></script>
+    <script src="js/ajax_email.js"></script>
+</body>
+</html>
