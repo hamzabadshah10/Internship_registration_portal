@@ -20,10 +20,10 @@ This project emphasizes strict data integrity, multi-level form validation, and 
 ## ✨ Key Features
 
 * **Real-Time AJAX Validation:** Live checking of university email availability before form submission to prevent duplicate entries.
-* **Multi-Level Security:** * Client-side Regex validation for immediate user feedback.
+* **Multi-Level Security:**  Client-side Regex validation for immediate user feedback.
     * Server-side PHP re-validation to ensure data integrity even if JavaScript is bypassed.
 * **Secure File Handling:** Resume uploads are strictly restricted to `.pdf` formats using true MIME-type validation via `finfo_file` (preventing `.php` files renamed to `.pdf`), with a 2MB size limit and `.htaccess` execution prevention.
-* **Threat Prevention:** * **SQL Injection (SQLi):** Mitigated using PDO Prepared Statements.
+* **Threat Prevention:**  **SQL Injection (SQLi):** Mitigated using PDO Prepared Statements.
     * **Cross-Site Scripting (XSS):** Mitigated using strict input sanitization (`htmlspecialchars`).
 * **Modern UI/UX:** Responsive, fully custom Midnight Slate & Ocean Blue CSS theme featuring glassmorphism cards, dynamic focus states, and intuitive placeholder hints.
 
