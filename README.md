@@ -4,7 +4,7 @@
 
 <br/>
 
-# 🔒 PAF-IAST Secure Internship Registration Portal
+# 🔒 PAF-IAST Secure Internship Registration Portal - University Project
 
 ### *A robust, secure, and visually modern web portal for student industry placements.*
 
